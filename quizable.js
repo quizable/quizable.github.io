@@ -128,7 +128,6 @@ function changeCard(direction)
 	
 	// Refresh the card:
 	flipCard();
-	flipCard();
 }
 
 // Moving the menu in and out:
