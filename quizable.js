@@ -125,6 +125,10 @@ function changeCard(direction)
 
 	// Refresh the controls:
 	controlVis();
+	
+	// Refresh the card:
+	flipCard();
+	flipCard();
 }
 
 // Moving the menu in and out:
