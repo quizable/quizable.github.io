@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quizable</title>
+		<link rel="icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="apple-touch-icon" href="extra/q-mobile.png">
+		<meta property="og:site_name" content="Quizable">
+		<meta property="og:title" content="Quizable">
+		<meta property="og:description" content="Flashcards, fast.">
+		<meta name="description" content="Flashcards, fast."/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="stylesheet" href="cascade.css">
+	</head>
+	<body>
+		<div id="content">
+			<button id="left-control" class="left" onclick="changeCard('left')"><</button>
+			<div class="card" onclick="flipCard()" id="cardDiv">
+				<div class="card-content">
+					<p id="card-info">?</p>
+				</div>
+			</div>
+			<button id="right-control" class="right" onclick="changeCard('right')">></button>
+		</div>
+
+		<button id="menu-access" class="menu-access" onclick="moveMenu()">></button>
+		
+		<div id="sidebar" class="sidebar">
+			<div class="sidebar-content-container">
+				<div class="sidebar-input-area">
+					<img src="q-white/white-48.png" alt="Quizable"/>
+					<input id="front" placeholder="front"></input>
+					<input id="back" placeholder="back"></input>
+					<button onclick="addCard()"><b>+</b></button>
+				</div>
+				<div>
+					<p class="sidebar-text-title"><b>CARDS</b></p>
+					<p class="sidebar-text-subtitle">Click or tap an item to remove it.</p>
+		  		<ul id="cards"></ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="quizable.js"></script>
+</html>
