@@ -1,0 +1,185 @@
+@font-face {
+	font-family: "Inter";
+	src: URL("font/Inter-Variable.ttf") format("truetype");
+}
+
+body {
+	font-family: monospace;
+	background-color: #EBEBEB;
+}
+
+p {
+	font-family: 'Inter';
+	font-size: larger;
+}
+
+button {
+	font-family: monospace;
+	padding: 4px 6px;
+	border-radius: 4px;
+	background-color: #4169DD;
+	color: #FFF;
+	border: none;
+	border-bottom: 2px solid #1F3579;
+}
+
+button:hover {
+	background-color:#6080DD;
+}
+
+.menu-access {
+	position: absolute;
+	right: 1em;
+	top: 1em;
+}
+
+.card {
+	padding: none;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 80%;
+	background-color: #FFF;
+	border-radius: 10px;
+	text-align: center;
+	border: none;
+	border-bottom: 4px solid #868686;
+	box-shadow: #CFCFCF 0px 2px 10px 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.right, .left {
+	background-color: #EBEBEB;
+	color: #282828;
+	border: none;
+	width: 10%;
+	font-size: larger;
+	height: 100%;
+	z-index: -1;
+}
+
+.right:hover, .left:hover {
+	border-radius: 0px;
+}
+
+.right {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.right:hover {
+	background-image: linear-gradient(to left, #C8C8C8 20%,#EBEBEB);
+}
+
+.left {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.left:hover {
+	background-image: linear-gradient(to right, #C8C8C8 20%,#EBEBEB);
+}
+
+.sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	background-color: #4169DD;
+	overflow-x: hidden;
+	padding-top: 1em;
+	color: #FFF;
+}
+
+.sidebar-text-title {
+	font-size: x-large;
+	margin-bottom: 4px;
+}
+
+.sidebar {
+	text-align: center;
+}
+
+.sidebar span {
+	font-style: italic;
+}
+
+.sidebar p {
+	text-align: left;
+	font-family: "Inter";
+	color: #FFF;
+}
+
+.sidebar button {
+	box-sizing: border-box;
+	border: none;
+	padding: 8px;
+	width: 100%;
+	border-radius: 4px;
+	font-family: "Inter";
+	background-color: #FFF;
+	color: #3B3B3B;
+	border: none;
+	border-bottom: 2px solid #999999;
+}
+
+.sidebar button:hover {
+	background-color: #EBEBEB;
+}
+
+.sidebar input {
+	padding: 8px;
+	width: 100%;
+	font-family: "Inter";
+	border-radius: 4px;
+	border: none;
+	margin-bottom: 8px;
+	border-bottom: 2px solid #999999;
+	box-sizing: border-box;
+}
+
+.sidebar img {
+	margin-bottom: 1em;
+}
+
+.sidebar input:focus {
+	outline: none;
+	border-bottom: 2px solid #CECECE;
+}
+
+.sidebar ul {
+	font-family: "Inter";
+	font-size: medium;
+}
+
+.sidebar-text-subtitle {
+	font-size: medium;
+	margin-top: 0px;
+	margin-bottom: 4px;
+}
+
+ul {
+	text-align: left;
+}
+
+li:hover {
+	color: #DADADA;
+}
+
+div.sidebar-content-container {
+	width: 50%;
+	margin: auto;
+}
+
+div.sidebar-input-area {
+	margin-bottom: 2em;
+}
