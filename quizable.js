@@ -50,6 +50,14 @@ function relist()
 	// Reset both input fields:
 	document.getElementById("front").value = "";
 	document.getElementById("back").value = "";
+	
+	// If there's nothing in the list?
+	if(cardListFront.length == 0)
+	{
+		cardListFront.push("example front");
+		cardListBack.push("example back");
+		cardListLength = 1;
+	}
 
 	// Turn both lists into JSON data then push to the localStorage:
 	localStorage.setItem("frontList", JSON.stringify(cardListFront));
