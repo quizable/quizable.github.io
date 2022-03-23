@@ -1,2 +1,2 @@
-# quizable.github.io
+# Quizable
 Flashcards, fast.
