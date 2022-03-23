@@ -127,7 +127,7 @@ function changeCard(direction)
 	controlVis();
 	
 	// Refresh the card:
-	flipCard();
+	if(cardFlipStatus == true) { flipCard(); }
 }
 
 // Moving the menu in and out:
